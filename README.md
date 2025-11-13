@@ -49,18 +49,6 @@ Orbit AI is a modern, full-stack AI-powered career guidance platform that provid
 - **Axios** - HTTP client for API calls
 - **React Icons** - Beautiful icon library
 
-### Database Schema (MongoDB Collections)
-```javascript
-users
-  - user_id (UUID), email, password_hash, created_at
-  
-profiles
-  - profile_id (UUID), user_id (UUID), name, degree, qualifications, skills
-  - gemini_api_key, profile_picture_base64, cv_pdf_base64, cv_text
-  
-career_analyses
-  - analysis_id (UUID), user_id (UUID), analysis_result_json, created_at
-```
 
 ## 🚀 Running the Application
 
@@ -97,13 +85,13 @@ tail -f /var/log/supervisor/frontend.err.log
 mongosh --eval "db.runCommand({ ping: 1 })"
 
 # Access database
-mongosh career_compass
+mongosh OrbitAI
 
 # View collections
-mongosh career_compass --eval "show collections"
+mongosh OrbitAI --eval "show collections"
 
 # Query users
-mongosh career_compass --eval "db.users.find().pretty()"
+mongosh OrbitAI --eval "db.users.find().pretty()"
 ```
 
 ## 📁 Project Structure
@@ -200,21 +188,6 @@ mongosh career_compass --eval "db.users.find().pretty()"
 - Smooth transitions
 - Adjusted gradients for dark backgrounds
 - Persisted user preference
-
-## 📝 Environment Variables
-
-### Backend (.env)
-```env
-MONGO_URL=mongodb://localhost:27017/career_compass
-SECRET_KEY=your-secret-key-change-this-in-production-min-32-chars
-ALGORITHM=HS256
-ACCESS_TOKEN_EXPIRE_MINUTES=10080
-```
-
-### Frontend (.env)
-```env
-VITE_API_URL=http://localhost:8001
-```
 
 ## 🔧 Development
 
@@ -344,5 +317,6 @@ curl -X POST http://localhost:8001/api/auth/login \
 
 ---
 
-**Built with ❤️ using FastAPI, React, MongoDB, and Gemini AI**
-"
+**Built with ❤️ By The Team Knights**
+
+
