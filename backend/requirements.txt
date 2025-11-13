@@ -1,0 +1,14 @@
+fastapi==0.115.5
+uvicorn==0.32.1
+motor==3.3.2
+pymongo==4.6.1
+# pymongo==3.12
+python-multipart==0.0.20
+PyPDF2==3.0.1
+python-jose[cryptography]==3.3.0
+passlib[bcrypt]==1.7.4
+bcrypt>=3.2.2 # ADDED LATER ON
+python-dotenv==1.0.1
+httpx==0.28.1
+
+# pip install --upgrade passlib[bcrypt] py-bcrypt
