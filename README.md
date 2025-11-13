@@ -1,4 +1,4 @@
-"# Orbit AI - Modern Career Guidance Platform
+"# Orbit AI - Modern Career Guidance Platform"
 
 ## 🎯 Overview
 
